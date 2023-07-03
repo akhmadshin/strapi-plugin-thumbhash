@@ -1,5 +1,5 @@
 {
-  "name": "strapi-thumbhash",
+  "name": "strapi-plugin-thumbhash",
   "version": "1.0.0",
   "description": "A plugin that generates thumbhash for your uploaded images",
   "strapi": {
