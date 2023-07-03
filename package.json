@@ -1,0 +1,39 @@
+{
+  "name": "strapi-thumbhash",
+  "version": "1.0.0",
+  "description": "A plugin that generates thumbhash for your uploaded images",
+  "strapi": {
+    "name": "strapi-thumbhash",
+    "description": "A plugin that generates thumbhash for your uploaded images",
+    "kind": "plugin",
+    "displayName": "Strapi Thumbhash"
+  },
+  "dependencies": {
+    "thumbhash": "0.1.1",
+    "encoding": "0.1.13",
+    "image-size": "1.0.2",
+    "node-fetch": "2.6.12"
+  },
+  "devDependencies": {
+    "sharp": "0.32.1"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0",
+    "sharp": ">= 0.30.6"
+  },
+  "author": {
+    "name": "Vadim Akhmadshin",
+    "url": "https://github.com/qwasderfasder"
+  },
+  "maintainers": [
+    {
+      "name": "Vadim Akhmadshin",
+      "url": "https://github.com/qwasderfasder"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
