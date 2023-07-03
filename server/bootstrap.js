@@ -6,17 +6,17 @@ module.exports = ({ strapi }) => {
     const { data, where } = event.params;
 
     if ((data.mime && data.mime.startsWith('image/'))) {
-      data.thumbhash = await strapi.plugin('strapi-thumbhash').service('thumbhash').generateThumbhash(data.url);
+      data.thumbhash = await strapi.plugin('strapi-plugin-thumbhash').service('thumbhash').generateThumbhash(data.url);
     }
 
-    if (eventType === 'beforeUpdate' && strapi.plugin('strapi-thumbhash').config('regenerateOnUpdate') === true) {
+    if (eventType === 'beforeUpdate' && strapi.plugin('strapi-plugin-thumbhash').config('regenerateOnUpdate') === true) {
       const fullData = await strapi.db.query('plugin::upload.file').findOne({
         select: ['url', 'thumbhash', 'name', 'mime'],
         where
       })
 
       if ((fullData.mime && fullData.mime.startsWith('image/')) && !fullData.thumbhash) {
-        data.thumbhash = await strapi.plugin('strapi-thumbhash').service('thumbhash').generateThumbhash(fullData.url);
+        data.thumbhash = await strapi.plugin('strapi-plugin-thumbhash').service('thumbhash').generateThumbhash(fullData.url);
       }
     }
   };

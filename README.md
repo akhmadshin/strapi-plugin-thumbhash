@@ -1,4 +1,4 @@
-# Strapi plugin strapi-thumbhash
+# Strapi plugin strapi-plugin-thumbhash
 
 A plugin for <a href="https://github.com/strapi/strapi">Strapi CMS</a> that generates <a href="https://evanw.github.io/thumbhash/">thumbhash</a> for your uploaded images
 
@@ -7,7 +7,7 @@ A plugin for <a href="https://github.com/strapi/strapi">Strapi CMS</a> that gene
 To install, run:
 
 ```bash
-npm install strapi-thumbhash
+npm install strapi-plugin-thumbhash
 ```
 
 Open/create file `config/plugins.js`. Enable this plugin by adding:
@@ -15,7 +15,7 @@ Open/create file `config/plugins.js`. Enable this plugin by adding:
 ```js
 module.exports = {
     ...
-    'strapi-thumbhash': {
+    'strapi-plugin-thumbhash': {
       enabled: true,
       config: {
         regenerateOnUpdate: true

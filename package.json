@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A plugin that generates thumbhash for your uploaded images",
   "strapi": {
-    "name": "strapi-thumbhash",
+    "name": "strapi-plugin-thumbhash",
     "description": "A plugin that generates thumbhash for your uploaded images",
     "kind": "plugin",
     "displayName": "Strapi Thumbhash"
