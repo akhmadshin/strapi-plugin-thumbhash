@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-thumbhash",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A plugin that generates thumbhash for your uploaded images",
   "strapi": {
     "name": "strapi-plugin-thumbhash",
@@ -12,10 +12,10 @@
     "thumbhash": "0.1.1",
     "encoding": "0.1.13",
     "image-size": "1.0.2",
-    "node-fetch": "2.6.12"
+    "node-fetch": "3.3.2"
   },
   "devDependencies": {
-    "sharp": "0.32.1"
+    "sharp": "0.32.6"
   },
   "peerDependencies": {
     "@strapi/strapi": "^4.0.0",
@@ -32,7 +32,7 @@
     }
   ],
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
+    "node": ">=14.19.1 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
